@@ -4,24 +4,18 @@
  * @author (Ben Adelson) 
  * @version (2019-11-08)
  */
-public class Human extends Creature
+public class Elf extends Creature
 {
     // instance variables - replace the example below with your own
     private static int MAX_STR = 18;
-    private static int MIN_STR = 8;
+    private static int MIN_STR = 5;
     private static int MAX_HP = 25;
-    private static int MIN_HP = 10;
-    
-    
-    //private static final int MAX_HUMAN_HP = 25;
-    //private static final int MIN_HUMAN_HP = 5;
-    //private static final int MAX_HUMAN_STR = 20;
-    //private static final int MIN_HUMAN_STR = 5;
+    private static int MIN_HP = 8;
 
     /**
      * Constructor for objects of class Human
      */
-    public Human()
+    public Elf()
     {
         // note how the class uses the static randomizer class to
         // generate the values. This localizes the need to know 
@@ -35,8 +29,24 @@ public class Human extends Creature
           
     }
     
-    public Human(int str, int hp){
+    /**
+     * Method that creates the Elf
+     * @param hp are hitpoints for the elf between the range of 8-25
+     * @param str is strength for the elf between the range of 8-25
+     */
+    public Elf(int str, int hp){
         super(str,hp);
+    }
+    
+    public int MagicalDamage(){
+        int magicPercent;
+        magicPercent = random.nextInt(10)+1; //10% chance
+        damageInflicted = super.damage();
+        if(magicPercent == 5){
+            damageInflicted = 2 * str;
+            System.out.println("The light blesses those who serve!");
+        }
+        return damageInflicted;
     }
 
 }

@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Elf
+comment0.text=\r\n\ human\ inheritance\ that\ connects\ tp\ creature\r\n\ \r\n\ @author\ (Ben\ Adelson)\ \r\n\ @version\ (2019-11-08)\r\n
+comment1.params=
+comment1.target=Elf()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Human\r\n
+comment2.params=str\ hp
+comment2.target=Elf(int,\ int)
+comment2.text=\r\n\ Method\ that\ creates\ the\ Elf\r\n\ @param\ hp\ are\ hitpoints\ for\ the\ elf\ between\ the\ range\ of\ 8-25\r\n\ @param\ str\ is\ strength\ for\ the\ elf\ between\ the\ range\ of\ 8-25\r\n
+comment3.params=
+comment3.target=int\ MagicalDamage()
+numComments=4

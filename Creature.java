@@ -12,10 +12,10 @@ import java.util.Random;
  */
 public abstract class Creature
 {
-    private int str;
-    private int max_hp;
-    private int hp;
-    private int damageInflicted;
+    public int str;
+    public int max_hp;
+    public int hp;
+    public int damageInflicted;
     Random random = new Random();
 
     
@@ -79,7 +79,7 @@ public abstract class Creature
         }
     }
     
-    
+   
     /**
      * takeDamage receives a value for the amount of damage to subtract from 
      * the current total of hit points
