@@ -1,5 +1,5 @@
 /**
- * elf inheritance that connects tp creature
+ * elf inheritance that connects to creature
  * 
  * @author (Ben Adelson) 
  * @version (2019-11-08)
@@ -13,7 +13,7 @@ public class Elf extends Creature
     private static int MIN_HP = 8;
 
     /**
-     * Constructor for objects of class Human
+     * Constructor for objects of class Elf
      */
     public Elf()
     {

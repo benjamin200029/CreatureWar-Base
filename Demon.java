@@ -13,7 +13,7 @@ public class Demon extends Creature
     private static int MIN_HP = 5;
 
     /**
-     * Constructor for objects of class Human
+     * Constructor for objects of class Demon
      */
     public Demon()
     {

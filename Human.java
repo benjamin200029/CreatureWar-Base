@@ -1,5 +1,5 @@
 /**
- * human inheritance that connects tp creature
+ * human inheritance that connects to creature
  * 
  * @author (Ben Adelson) 
  * @version (2019-11-08)
@@ -37,6 +37,11 @@ public class Human extends Creature
     
     public Human(int str, int hp){
         super(str,hp);
+    }
+    
+    public int damage(){
+        damageInflicted = super.damage();
+        return damageInflicted;
     }
 
 }

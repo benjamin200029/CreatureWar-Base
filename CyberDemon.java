@@ -4,18 +4,18 @@
  * @author (Ben Adelson) 
  * @version (2019-11-08)
  */
-public class Balrog extends Creature
+public class CyberDemon extends Creature
 {
     // instance variables - replace the example below with your own
-    private static int MAX_STR = 100;
-    private static int MIN_STR = 50;
-    private static int MAX_HP = 200;
-    private static int MIN_HP = 80;
+    private static int MAX_STR = 40;
+    private static int MIN_STR = 20;
+    private static int MAX_HP = 100;
+    private static int MIN_HP = 25;
 
     /**
-     * Constructor for objects of class Balrog
+     * Constructor for objects of class CyberDemon
      */
-    public Balrog()
+    public CyberDemon()
     {
         // note how the class uses the static randomizer class to
         // generate the values. This localizes the need to know 
@@ -34,7 +34,7 @@ public class Balrog extends Creature
      * @param hp are hitpoints for the Balrog between the range of 80-200
      * @param str is strength for the Balrog between the range of 50-100
      */
-    public Balrog(int str, int hp){
+    public CyberDemon(int str, int hp){
         super(str,hp);
     }
     
@@ -46,7 +46,6 @@ public class Balrog extends Creature
     
     public int damage(){
         damageInflicted = super.damage();
-        damageInflicted += super.damage();
         return damageInflicted;
     }
 
