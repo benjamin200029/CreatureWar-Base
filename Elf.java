@@ -1,5 +1,5 @@
 /**
- * human inheritance that connects tp creature
+ * elf inheritance that connects tp creature
  * 
  * @author (Ben Adelson) 
  * @version (2019-11-08)

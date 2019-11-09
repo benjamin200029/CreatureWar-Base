@@ -1,5 +1,5 @@
 /**
- * human inheritance that connects tp creature
+ * demon inheritance that connects to creature
  * 
  * @author (Ben Adelson) 
  * @version (2019-11-08)
@@ -30,7 +30,7 @@ public class Demon extends Creature
     }
     
     /**
-     * Method that creates the Elf
+     * Method that creates the Demon
      * @param hp are hitpoints for the demon between the range of 6-14
      * @param str is strength for the demon between the range of 5-20
      */
@@ -38,11 +38,17 @@ public class Demon extends Creature
         super(str,hp);
     }
     
-    public int MagicalDamage(){
-        int magicPercent;
-        magicPercent = random.nextInt(5)+1; //5% chance
+    /**
+     * Method calculates the damage the Demon creates
+     * @param hp are hitpoints for the Demon between the range of 80-200
+     * @param str is strength for the Demon between the range of 50-100
+     */
+    
+    public int damage(){
+        int damagePercent;
+        damagePercent = random.nextInt(5)+1; //5% chance
         damageInflicted = super.damage();
-        if(magicPercent == 2){
+        if(damagePercent == 2){
             damageInflicted = str + 50;
             System.out.println("For Chaos!");
         }

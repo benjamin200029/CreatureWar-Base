@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Demon
+comment0.text=\r\n\ demon\ inheritance\ that\ connects\ to\ creature\r\n\ \r\n\ @author\ (Ben\ Adelson)\ \r\n\ @version\ (2019-11-08)\r\n
+comment1.params=
+comment1.target=Demon()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Human\r\n
+comment2.params=str\ hp
+comment2.target=Demon(int,\ int)
+comment2.text=\r\n\ Method\ that\ creates\ the\ Demon\r\n\ @param\ hp\ are\ hitpoints\ for\ the\ demon\ between\ the\ range\ of\ 6-14\r\n\ @param\ str\ is\ strength\ for\ the\ demon\ between\ the\ range\ of\ 5-20\r\n
+comment3.params=
+comment3.target=int\ damage()
+comment3.text=\r\n\ Method\ calculates\ the\ damage\ the\ Demon\ creates\r\n\ @param\ hp\ are\ hitpoints\ for\ the\ Demon\ between\ the\ range\ of\ 80-200\r\n\ @param\ str\ is\ strength\ for\ the\ Demon\ between\ the\ range\ of\ 50-100\r\n
+numComments=4

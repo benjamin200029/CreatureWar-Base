@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Elf
-comment0.text=\r\n\ human\ inheritance\ that\ connects\ tp\ creature\r\n\ \r\n\ @author\ (Ben\ Adelson)\ \r\n\ @version\ (2019-11-08)\r\n
+comment0.text=\r\n\ elf\ inheritance\ that\ connects\ tp\ creature\r\n\ \r\n\ @author\ (Ben\ Adelson)\ \r\n\ @version\ (2019-11-08)\r\n
 comment1.params=
 comment1.target=Elf()
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Human\r\n
