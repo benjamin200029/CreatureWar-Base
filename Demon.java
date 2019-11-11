@@ -50,7 +50,7 @@ public class Demon extends Creature
         damageInflicted = super.damage();
         if(damagePercent == 2){
             damageInflicted = str + 50;
-            System.out.println("For Chaos!");
+            System.out.println("Demons screams: 'For Chaos!'");
         }
         return damageInflicted;
     }

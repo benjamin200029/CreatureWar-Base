@@ -1,10 +1,10 @@
 /**
- * balrog inheritance that connects to creature
+ * balrog inheritance that connects to demon
  * 
  * @author (Ben Adelson) 
  * @version (2019-11-08)
  */
-public class CyberDemon extends Creature
+public class CyberDemon extends Demon
 {
     // instance variables - replace the example below with your own
     private static int MAX_STR = 40;
@@ -29,14 +29,14 @@ public class CyberDemon extends Creature
           
     }
     
-    /**
-     * Method that creates the CyberDemon
-     * @param hp are hitpoints for the CyberDemon between the range of 25-100
-     * @param str is strength for the CyberDemon between the range of 20-40
-     */
-    public CyberDemon(int str, int hp){
-        super(str,hp);
-    }
+    // /**
+     // * Method that creates the CyberDemon
+     // * @param hp are hitpoints for the CyberDemon between the range of 25-100
+     // * @param str is strength for the CyberDemon between the range of 20-40
+     // */
+    // public CyberDemon(int str, int hp){
+        // super(str,hp);
+    // }
     
     /**
      * Method calculates the damage the CyberDemon creates
@@ -46,6 +46,7 @@ public class CyberDemon extends Creature
     
     public int damage(){
         damageInflicted = super.damage();
+        System.out.println("CyberDemon screams: Suffering for All!");
         return damageInflicted;
     }
 

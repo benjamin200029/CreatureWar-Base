@@ -41,6 +41,8 @@ public class Human extends Creature
     
     public int damage(){
         damageInflicted = super.damage();
+        System.out.println("Human yells: For Sigmar!");
+
         return damageInflicted;
     }
 

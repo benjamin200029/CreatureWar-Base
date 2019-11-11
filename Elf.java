@@ -1,10 +1,10 @@
 /**
- * elf inheritance that connects to creature
+ * Elf inheritance that connects to human
  * 
  * @author (Ben Adelson) 
  * @version (2019-11-08)
  */
-public class Elf extends Creature
+public class Elf extends Human
 {
     // instance variables - replace the example below with your own
     private static int MAX_STR = 18;
@@ -29,14 +29,14 @@ public class Elf extends Creature
           
     }
     
-    /**
-     * Method that creates the Elf
-     * @param hp are hitpoints for the elf between the range of 8-25
-     * @param str is strength for the elf between the range of 8-25
-     */
-    public Elf(int str, int hp){
-        super(str,hp);
-    }
+    // /**
+     // * Method that creates the Elf
+     // * @param hp are hitpoints for the elf between the range of 8-25
+     // * @param str is strength for the elf between the range of 8-25
+     // */
+    // public Elf(int str, int hp){
+        // super(str,hp);
+    // }
     
     public int MagicalDamage(){
         int magicPercent;
@@ -44,7 +44,9 @@ public class Elf extends Creature
         damageInflicted = super.damage();
         if(magicPercent == 5){
             damageInflicted = 8 * str;
-            System.out.println("The light blesses those who serve!");
+            System.out.println("Elf yells: The light blesses those who serve!");
+        }else{
+            System.out.println("Elf yells: For Order");
         }
         return damageInflicted;
     }

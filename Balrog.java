@@ -1,10 +1,10 @@
 /**
- * balrog inheritance that connects to creature
+ * balrog inheritance that connects to demon
  * 
  * @author (Ben Adelson) 
  * @version (2019-11-08)
  */
-public class Balrog extends Creature
+public class Balrog extends Demon
 {
     // instance variables - replace the example below with your own
     private static int MAX_STR = 100;
@@ -34,9 +34,9 @@ public class Balrog extends Creature
      * @param hp are hitpoints for the Balrog between the range of 80-200
      * @param str is strength for the Balrog between the range of 50-100
      */
-    public Balrog(int str, int hp){
-        super(str,hp);
-    }
+    // public Balrog(int str, int hp){
+        // super(str,hp);
+    // }
     
     /**
      * Method calculates the damage the Lord of the End Times (or Balrog) creates
@@ -47,6 +47,8 @@ public class Balrog extends Creature
     public int damage(){
         damageInflicted = super.damage();
         damageInflicted += super.damage();
+        System.out.println("Balrog screams: The end comes mortals!!");
+
         return damageInflicted;
     }
 

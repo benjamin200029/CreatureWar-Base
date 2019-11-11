@@ -27,9 +27,8 @@ public class Warhammer
     public Warhammer (){   
         //adds troops for the forces of Order
         for(int i = 0; i < 300; i++){
-            int random = Randomizer.nextInt(15);
-            if(random > 11)
-            {
+            int random = Randomizer.nextInt(20);
+            if(random > 13){
                 forcesOfOrder.add(new Elf());
             }else if(random > 6){
                 forcesOfOrder.add(new Dwarf());
@@ -112,6 +111,11 @@ public class Warhammer
         if(forcesOfChaos.size()>0){
             System.out.println("The forces of Order have" 
             + " fallen, the end times have begun!");
+        }
+        
+        if(forcesOfChaos.size()== 0 && forcesOfOrder.size()== 0){
+            System.out.println("In the end," 
+            + " death claims us all.(no one wins)");
         }
         // results
         System.out.println("");
