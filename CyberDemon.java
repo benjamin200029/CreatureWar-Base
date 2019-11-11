@@ -30,18 +30,18 @@ public class CyberDemon extends Creature
     }
     
     /**
-     * Method that creates the Balrog
-     * @param hp are hitpoints for the Balrog between the range of 80-200
-     * @param str is strength for the Balrog between the range of 50-100
+     * Method that creates the CyberDemon
+     * @param hp are hitpoints for the CyberDemon between the range of 25-100
+     * @param str is strength for the CyberDemon between the range of 20-40
      */
     public CyberDemon(int str, int hp){
         super(str,hp);
     }
     
     /**
-     * Method calculates the damage the Lord of the End Times (or Balrog) creates
-     * @param hp are hitpoints for the Balrog between the range of 80-200
-     * @param str is strength for the Balrog between the range of 50-100
+     * Method calculates the damage the CyberDemon creates
+     * @param hp are hitpoints for the CyberDemon between the range of 25-100
+     * @param str is strength for the CyberDemon between the range of 20-40
      */
     
     public int damage(){
