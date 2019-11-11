@@ -43,7 +43,7 @@ public class Elf extends Creature
         magicPercent = random.nextInt(10)+1; //10% chance
         damageInflicted = super.damage();
         if(magicPercent == 5){
-            damageInflicted = 2 * str;
+            damageInflicted = 8 * str;
             System.out.println("The light blesses those who serve!");
         }
         return damageInflicted;

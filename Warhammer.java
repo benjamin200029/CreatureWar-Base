@@ -26,23 +26,25 @@ public class Warhammer
      */
     public Warhammer (){   
         //adds troops for the forces of Order
-        for(int i = 0; i < 60; i++){
-            int random = Randomizer.nextInt(10);
-            if(random > 7)
+        for(int i = 0; i < 300; i++){
+            int random = Randomizer.nextInt(15);
+            if(random > 11)
             {
                 forcesOfOrder.add(new Elf());
+            }else if(random > 6){
+                forcesOfOrder.add(new Dwarf());
             }else{
                 forcesOfOrder.add(new Human());
             }
         }
         
         //adds troops for the forces of Chaos
-        for(int i = 0; i < 80; i++){
-            int random = Randomizer.nextInt(15);
-            if(random == 15)
+        for(int i = 0; i < 300; i++){
+            int random = Randomizer.nextInt(20);
+            if(random == 20)
             {
                 forcesOfChaos.add(new Balrog());
-            }else if(random == 5 || random == 10){
+            }else if(random == 10 || random == 15){
                 forcesOfChaos.add(new CyberDemon());
             }
             else{
@@ -65,10 +67,20 @@ public class Warhammer
 
         System.out.println("The battle between the forces of Order and Chaos"
         + " begins, the fate of the world hangs in the balance!");
+        
+        /**
+         * main loop
+         * 
+        */
         while(forcesOfOrder.size() != 0 && forcesOfChaos.size() != 0){
         
-            order = forcesOfOrder.get(0);
-            chaos = forcesOfChaos.get(0);
+            
+            if(order == null){
+                order = forcesOfOrder.remove(0); 
+            }
+            if(chaos == null){
+                chaos = forcesOfChaos.remove(0); 
+            }
             
             while(order.isAlive() && chaos.isAlive()){
                 order.takeDamage(chaos.damage());
@@ -85,10 +97,11 @@ public class Warhammer
             if(chaos.isDead())
             {
                 chaos = null;
-                System.out.println("A demon is slain, and embraces demonhood.");
+                System.out.println("A demon is slain, such weakness has no place in demonhood.");
                 chaosLosses++;
             }
         }
+        System.out.println("");
         System.out.println("Conclusion");
 
         if(forcesOfOrder.size()>0){

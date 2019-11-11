@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Dwarf
+comment0.text=\r\n\ Dwarf\ inheritance\ that\ connects\ to\ creature\r\n\ \r\n\ @author\ (Ben\ Adelson)\ \r\n\ @version\ (2019-11-10)\r\n
+comment1.params=
+comment1.target=Dwarf()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Dwarf\r\n
+comment2.params=str\ hp
+comment2.target=Dwarf(int,\ int)
+comment2.text=\r\n\ Method\ that\ creates\ the\ Dwarf\r\n\ @param\ hp\ are\ hitpoints\ for\ the\ Dwarf\ between\ the\ range\ of\ 8-25\r\n\ @param\ str\ is\ strength\ for\ the\ Dwarf\ between\ the\ range\ of\ 8-25\r\n
+comment3.params=
+comment3.target=int\ rifleDamage()
+numComments=4
