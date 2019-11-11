@@ -16,11 +16,8 @@ import java.util.ArrayList;
 public class Warhammer
 {
     //instance variables
-    private ArrayList<Creature> forcesOfOrder;
-    private ArrayList<Creature> forcesOfChaos;
-    Creature order;
-    Creature chaos;
-
+    private ArrayList<Creature> forcesOfOrder = new ArrayList<Creature>();
+    private ArrayList<Creature> forcesOfChaos = new ArrayList<Creature>();
     
     /**
      * Adds troops for the two armies. Order gets humans and elves 
@@ -63,9 +60,11 @@ public class Warhammer
     {
        int orderLosses = 0;
        int chaosLosses = 0;
+       Creature order = null;
+       Creature chaos = null;
 
         System.out.println("The battle between the forces of Order and Chaos"
-        + "begins, the fate of the world hangs in the balance!");
+        + " begins, the fate of the world hangs in the balance!");
         while(forcesOfOrder.size() != 0 && forcesOfChaos.size() != 0){
         
             order = forcesOfOrder.get(0);
@@ -73,45 +72,40 @@ public class Warhammer
             
             while(order.isAlive() && chaos.isAlive()){
                 order.takeDamage(chaos.damage());
-                order.takeDamage(chaos.damage());
-            
-            
-                if(order.isDead())
-                {
-                    order = null;
-                    System.out.println("May Sigmar bless this fallen comrade.");
-                    orderLosses++;
-                }
-            
-                if(chaos.isDead())
-                {
-                    chaos = null;
-                    System.out.println("A demon is slain, and embraces demonhood.");
-                    chaosLosses++;
-                }
-            }
-            System.out.println("Conclusion");
-
-            if(forcesOfOrder.size()>0){
-                System.out.println("The forces of Order have" 
-                + " won this day, but there are always battles to fight, and wars to wage.");
-            }
-            if(forcesOfChaos.size()>0){
-                System.out.println("The forces of Order have" 
-                + " fallen, the end times have begun!");
+                chaos.takeDamage(order.damage());
             }
             
+            if(order.isDead())
+            {
+                order = null;
+                System.out.println("May Sigmar bless this fallen comrade.");
+                orderLosses++;
+            }
             
-            System.out.println("War Report");
-            System.out.println("The forces of Order had an army of "
-            + forcesOfOrder.size() + " and lost " + orderLosses);
-            System.out.println("The forces of Chaos had an army of "
-            + forcesOfChaos.size() + " and lost " + chaosLosses);
-            System.out.println("");
-            
-            
-
+            if(chaos.isDead())
+            {
+                chaos = null;
+                System.out.println("A demon is slain, and embraces demonhood.");
+                chaosLosses++;
+            }
         }
+        System.out.println("Conclusion");
+
+        if(forcesOfOrder.size()>0){
+            System.out.println("The forces of Order have" 
+            + " won this day, but there are always battles to fight, and wars to wage.");
+        }
+        
+        if(forcesOfChaos.size()>0){
+            System.out.println("The forces of Order have" 
+            + " fallen, the end times have begun!");
+        }
+        // results
+        System.out.println("");
+        System.out.println("War Report");
+        System.out.println("The forces of Order had an army of "
+        + forcesOfOrder.size() + " and lost " + orderLosses);
+        System.out.println("The forces of Chaos had an army of "
+        + forcesOfChaos.size() + " and lost " + chaosLosses);
     }
-    
 }

@@ -61,9 +61,9 @@ public abstract class Creature
         //implement this
         if(hp>0){
             return true;
-        }else{
+        }else
             return false; //change this
-        }
+        
     }
     
     /**
@@ -74,9 +74,9 @@ public abstract class Creature
         //implement this
         if(hp<=0){
             return true;
-        }else{
+        }else
         return false; //change this
-        }
+        
     }
     
    
