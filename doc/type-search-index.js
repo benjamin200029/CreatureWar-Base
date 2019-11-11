@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"<Unnamed>","l":"Balrog"},{"p":"<Unnamed>","l":"Creature"},{"p":"<Unnamed>","l":"CyberDemon"},{"p":"<Unnamed>","l":"Demon"},{"p":"<Unnamed>","l":"Dwarf"},{"p":"<Unnamed>","l":"Elf"},{"p":"<Unnamed>","l":"Human"},{"p":"<Unnamed>","l":"Randomizer"},{"p":"<Unnamed>","l":"Warhammer"}]
